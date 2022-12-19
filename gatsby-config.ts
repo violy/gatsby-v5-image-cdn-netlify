@@ -12,7 +12,8 @@ const config: GatsbyConfig = {
   plugins: [{
     resolve: 'gatsby-source-wordpress',
     options: {
-      "url": "https://wpgatsbydemo.wpengine.com/graphql"
+      "url": "https://wpgatsbydemo.wpengine.com/graphql",
+      type: { MediaItem: { createFileNodes: false } },
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp"]
 };

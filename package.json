@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
+    "start": "GATSBY_CLOUD_IMAGE_CDN=1 gatsby develop",
+    "build": "GATSBY_CLOUD_IMAGE_CDN=1 gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"
