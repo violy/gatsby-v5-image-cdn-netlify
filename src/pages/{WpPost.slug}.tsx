@@ -1,5 +1,5 @@
 import React from "react"
-import {Link, graphql, PageProps} from "gatsby"
+import {graphql, PageProps} from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import parse from "html-react-parser"
 
@@ -21,7 +21,7 @@ const BlogPostTemplate = ({ data: { post } }:BlogPostPageProps) => {
             <article
                 className="blog-post"
                 itemScope
-                itemType="http://schema.org/Article"
+                itemType="https://schema.org/Article"
             >
                 <header>
                     <h1 itemProp="headline">{parse(post?.title||'')}</h1>
